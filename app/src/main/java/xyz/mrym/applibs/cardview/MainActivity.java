@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        MyBaseCardLayout mrymCardView = findViewById(R.id.daoyin_card1);
+        MyBaseCardLayout mrymCardView = findViewById(R.id.daoyin_card122);
         mrymCardView.setDaoyinCardClickListener((pager_daoyin, taskName, daoyin_name) -> {
             System.out.println(pager_daoyin + " = " + taskName + " = " + daoyin_name);
         });

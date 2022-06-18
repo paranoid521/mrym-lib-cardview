@@ -92,7 +92,7 @@ public class MyBaseCardLayout extends LinearLayout {
         daoyin_time_title_view = (TextView) view.findViewById(R.id.daoyin_time_title);
         daoyin_hot_title_view = (TextView) view.findViewById(R.id.daoyin_hot_title);
         //生成控件ID
-        view.setId(daoyin_id);
+//        view.setId(daoyin_id);
 
         //Uri coverUri = Uri.parse("file:///android_asset/" + "qq.png");
         initData(daoyin_cover, daoyin_name, daoyin_level, daoyin_time, daoyin_hot);

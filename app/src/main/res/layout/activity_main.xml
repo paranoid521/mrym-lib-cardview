@@ -14,7 +14,7 @@
         tools:ignore="MissingConstraints">
 
         <xyz.mrym.applibs.cardviewlib.MyBaseCardLayout
-            app:daoyin_id="@+id/daoyin_card1"
+            android:id="@+id/daoyin_card122"
             android:layout_width="match_parent"
             android:layout_height="108sp"
             app:text="series"
