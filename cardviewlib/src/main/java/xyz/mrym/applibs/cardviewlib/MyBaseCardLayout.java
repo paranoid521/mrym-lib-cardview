@@ -117,6 +117,8 @@ public class MyBaseCardLayout extends LinearLayout {
         daoyin_card_view.setOnClickListener(v -> {
             if(daoyinCardClickListener != null) {
                 daoyinCardClickListener.cardOnClick(pager_daoyin, taskName, daoyin_name);
+            } else {
+                System.out.println("==============daoyinCardClickListener为空=============");
             }
         });
     }
