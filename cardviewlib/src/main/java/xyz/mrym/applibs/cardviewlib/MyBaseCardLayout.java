@@ -114,21 +114,9 @@ public class MyBaseCardLayout extends LinearLayout {
 
     //如何设置自定义控件的点击监听器
     public void initEvent(final String pager_daoyin, final String taskName, final String daoyinName){
-        daoyin_card_view.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //if(daoyinCardClickListener != null) {
-                //    daoyinCardClickListener.cardOnClick(pager_daoyin, taskName, daoyin_name);
-                //}
-                if(null != taskName) {
-                    //系列专题隐藏属性
-//                    ARouter.getInstance().build(pager_daoyin)
-//                            .withString("task_name", taskName)
-//                            .withString("daoyin_name", daoyinName)
-//                            .withString("type", text)
-//                            .withString("url", taskName)
-//                            .navigation();
-                }
+        daoyin_card_view.setOnClickListener(v -> {
+            if(daoyinCardClickListener != null) {
+                daoyinCardClickListener.cardOnClick(pager_daoyin, taskName, daoyin_name);
             }
         });
     }
