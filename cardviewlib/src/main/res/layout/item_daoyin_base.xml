@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_gravity="center_vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/daoyin_card"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:foregroundGravity="center"
+            android:visibility="visible"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/daoyin_cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/daoyin_card_pic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/inner_layout_margin_s"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/daoyin_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="穴道导引——好睡操"
+                        android:textColor="@color/card_view_gray_deep"
+                        android:textSize="@dimen/h3"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/daoyin_level_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="难度："
+                            android:textSize="@dimen/h4"
+                            android:textColor="@color/card_view_gray"
+                            android:visibility="visible"/>
+
+                        <TextView
+                            android:id="@+id/daoyin_level"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="L1"
+                            android:textSize="@dimen/h4"
+                            android:textColor="@color/card_view_gray" />
+
+                        <TextView
+                            android:id="@+id/daoyin_time_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 时间："
+                            android:textSize="@dimen/h4"
+                            android:textColor="@color/card_view_gray"
+                            android:visibility="visible"/>
+
+                        <TextView
+                            android:id="@+id/daoyin_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12min"
+                            android:textSize="@dimen/h4"
+                            android:textColor="@color/card_view_gray" />
+
+                        <TextView
+                            android:id="@+id/daoyin_hot_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 热度："
+                            android:textSize="@dimen/h4"
+                            android:textColor="@color/card_view_gray"
+                            android:visibility="visible"/>
+
+                        <TextView
+                            android:id="@+id/daoyin_hot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="500"
+                            android:textSize="@dimen/h4"
+                            android:textColor="@color/card_view_gray" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <xyz.mrym.applibs.cardviewlib.MyBaseCardLayout
+            app:daoyin_id="@+id/daoyin_card1"
+            android:layout_width="match_parent"
+            android:layout_height="108sp"
+            app:text="series"
+            app:daoyin_name="太极拳专题"
+            app:daoyin_level="跟随太极拳大师学习太极拳思想"
+            app:daoyin_time=" "
+            app:daoyin_hot=" "
+            app:daoyin_image="@drawable/tjq26"
+            app:pager_daoyin="/home/WebView"
+            app:taskName="https://tcm2.fetdesign.com/categories/%E5%A4%AA%E6%9E%81%E6%8B%B3%E4%B8%93%E9%A2%98/"
+            />
+
+        <xyz.mrym.applibs.cardviewlib.MyBaseCardLayout
+            app:daoyin_id="@+id/daoyin_card2"
+            android:layout_width="match_parent"
+            android:layout_height="108sp"
+            app:text="series"
+            app:daoyin_name="太极拳专题2222"
+            app:daoyin_level="跟随太极拳大师学习太极拳思想2222"
+            app:daoyin_time=" "
+            app:daoyin_hot=" "
+            app:daoyin_image="@drawable/tjq26"
+            app:pager_daoyin="/home/WebView"
+            app:taskName="https://tcm2.fetdesign.com/categories/%E5%A4%AA%E6%9E%81%E6%8B%B3%E4%B8%93%E9%A2%98/"
+            />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
