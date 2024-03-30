@@ -39,6 +39,9 @@ public class MyBaseCardLayout extends LinearLayout {
     private String daoyin_level;
     private String daoyin_time;
     private String daoyin_hot;
+    private String daoyin_level_title;
+    private String daoyin_time_title;
+    private String daoyin_hot_title;
     private String pager_daoyin;
     private String taskName;
 
@@ -77,6 +80,11 @@ public class MyBaseCardLayout extends LinearLayout {
         daoyin_level = typedArray.getText(R.styleable.my_base_card_view_daoyin_level).toString();
         daoyin_time = typedArray.getText(R.styleable.my_base_card_view_daoyin_time).toString();
         daoyin_hot = typedArray.getText(R.styleable.my_base_card_view_daoyin_hot).toString();
+        if(!text.equals("series")) {
+            daoyin_level_title = typedArray.getText(R.styleable.my_base_card_view_daoyin_level_title).toString();
+            daoyin_time_title = typedArray.getText(R.styleable.my_base_card_view_daoyin_time_title).toString();
+            daoyin_hot_title = typedArray.getText(R.styleable.my_base_card_view_daoyin_hot_title).toString();
+        }
         pager_daoyin = typedArray.getText(R.styleable.my_base_card_view_pager_daoyin).toString();
         taskName = typedArray.getText(R.styleable.my_base_card_view_taskName).toString();
 
@@ -95,7 +103,8 @@ public class MyBaseCardLayout extends LinearLayout {
 //        view.setId(daoyin_id);
 
         //Uri coverUri = Uri.parse("file:///android_asset/" + "qq.png");
-        initData(daoyin_cover, daoyin_name, daoyin_level, daoyin_time, daoyin_hot);
+        initData(daoyin_cover, daoyin_name, daoyin_level, daoyin_time, daoyin_hot,
+                 daoyin_level_title, daoyin_time_title, daoyin_hot_title);
         initEvent(pager_daoyin, taskName, daoyin_name);
         if(text.equals("series")) {
             daoyin_level_title_view.setVisibility(View.GONE);
@@ -104,12 +113,16 @@ public class MyBaseCardLayout extends LinearLayout {
         }
     }
 
-    public void initData(int daoyin_cover, String daoyin_name, String daoyin_level, String daoyin_time, String daoyin_hot){
+    public void initData(int daoyin_cover, String daoyin_name, String daoyin_level, String daoyin_time, String daoyin_hot,
+                         String daoyin_level_title, String daoyin_time_title, String daoyin_hot_title){
         this.daoyin_cover_view.setBackgroundResource(daoyin_cover);
         this.daoyin_name_view.setText(daoyin_name);
         this.daoyin_level_view.setText(daoyin_level);
         this.daoyin_time_view.setText(daoyin_time);
         this.daoyin_hot_view.setText(daoyin_hot);
+        this.daoyin_level_title_view.setText(daoyin_level_title);
+        this.daoyin_time_title_view.setText(daoyin_time_title);
+        this.daoyin_hot_title_view.setText(daoyin_hot_title);
     }
 
     //如何设置自定义控件的点击监听器

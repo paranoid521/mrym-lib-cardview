@@ -12,6 +12,9 @@
         <attr name="daoyin_level" format="string" />
         <attr name="daoyin_time" format="string" />
         <attr name="daoyin_hot" format="string" />
+        <attr name="daoyin_level_title" format="string" />
+        <attr name="daoyin_time_title" format="string" />
+        <attr name="daoyin_hot_title" format="string" />
         <!-- ARouter 回调值 -->
         <attr name="pager_daoyin" format="string" />
         <attr name="taskName" format="string" />
